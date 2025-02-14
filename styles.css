@@ -16,6 +16,17 @@
   box-sizing: border-box;
 }
 
+/* custom */
+
+ul {
+  list-style-type: none;
+}
+
+a { color: inherit; } 
+
+
+/* custom */
+
 .section__container {
   max-width: var(--max-width);
   margin: auto;
@@ -25,7 +36,7 @@
 .section__header {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
   gap: 2rem;
   flex-wrap: wrap;
   margin-bottom: 4rem;
@@ -176,7 +187,7 @@ header {
 }
 
 .header__content h1 {
-  font-size: 3rem;
+  font-size: 2.2rem;
   line-height: 4rem;
   font-weight: 800;
   color: var(--text-dark);
@@ -344,8 +355,8 @@ header {
 
 .booking__price {
   display: flex;
-  align-items: center;
-  justify-content: space-between;
+  align-items: center  ;
+  justify-content: end;
 }
 
 .price span {
@@ -448,7 +459,7 @@ header {
 
 .footer__container {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   gap: 5rem;
   color: var(--secondary-color);
 }
