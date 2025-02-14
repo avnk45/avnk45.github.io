@@ -3,21 +3,25 @@
     <head>
       <meta charset="UTF-8" />
       <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <link rel="icon" href="/assets/favicon.ico" type="image/x-icon" />
+
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <link
         href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css"
         rel="stylesheet"
       />
       <link rel="stylesheet" href="styles.css" />
-      <title>Justex</title>
+      <title>Travel South Africa</title>
     </head>
     <body>
       <nav>
-        <div class="nav__logo">Justex<span>.</span></div>
+        <div class="nav__logo">Travel South Africa<span>.</span></div>
         <ul class="nav__links">
-          <li class="link"><a href="#photos">Nos photos</a></li>
           <li class="link"><a href="#articles">Nos articles</a></li>
           <li class="link"><a href="#map">Notre carte</a></li>
+          <li class="link"><a href="#photos">Nos photos</a></li>
+          <li class="link"><a href="index_fr.html">FR 🇫🇷</a></li>
+
         </ul>
         <button class="btn" onclick="location.href='mailto:alex.vniekerk@gmail.com';">Contactez nous</button>
 
@@ -25,21 +29,21 @@
       <header id="header-1">
         <div class="section__container header__container">
           <div class="header__image">
-            <img src="assets/header-1.jpg" alt="header" />
-            <img src="assets/header-2.jpg" alt="header" />
+            <img loading="lazy" src="assets/mountain.jpg" alt="Mountain Image" />
+            <img loading="lazy" src="assets/girafe.jpg" alt="Girafe Image" />
           </div>
           <div class="header__content">
             <div>
               
-              <h1>Un an sur les routes d'Afrique du Sud</h1>
+              <h1>One year in South Africa</h1>
               <p class="section__subtitle">
-                <b>Nos découvertes et nos conseils pour un voyage authentique.</b> Nous sommes partis pour un an à la découverte de l’Afrique du Sud, sans itinéraire figé, juste avec l’envie de nous laisser surprendre. De la savane aux montagnes, des villages isolés aux grandes villes vibrantes, nous avons appris à voyager autrement. Ce site, c’est notre carnet de route, nos coups de cœur et nos astuces, partagés avec vous pour vous aider à vivre votre propre aventure, à votre rythme.
+                <b>Nos découvertes et nos conseils pour un voyage exceptionnel.</b> Nous sommes partis pour un an à la découverte de l’Afrique du Sud, sans itinéraire figé, juste avec l’envie de nous laisser surprendre. De la savane aux montagnes, des villages isolés aux grandes villes vibrantes, nous avons appris à voyager autrement. Ce site, c’est notre carnet de route, nos coups de cœur et nos astuces, partagés avec vous pour vous aider à vivre votre propre aventure, à votre rythme.
               </p>
               <div class="action__btns">
                 <button class="btn">Découvrez notre carte</button>
                 <!-- <div class="story">
                   <div class="video__image">
-                    <img src="assets/story.jpg" alt="story" />
+                    <img loading="lazy" src="assets/story.jpg" alt="story" />
                     <span><i class="ri-play-fill"></i></span>
                   </div>
                   <span>Watch our story</span>
@@ -49,51 +53,6 @@
           </div>
         </div>
       </header>
-
-      <section class="section__container destination__container" id="photos">
-        <div class="section__header">
-          <div>
-            <h2 class="section__title">Nos photos</h2>
-            <p class="section__subtitle">
-              Quand on a préparé notre voyage, on s’est rendu compte que les guides étaient utiles mais souvent impersonnels. Les blogs étaient inspirants, mais parfois trop vagues. Alors, après des mois sur la route, on a eu envie de créer un espace où on partage vraiment ce qui nous a aidés, ce qu’on aurait aimé savoir avant de partir, et surtout, ce qui rend ce pays si spécial. Pas de recommandations sponsorisées, pas de discours formaté, juste du vécu.
-            </p>
-          </div>
-          <!-- <div class="destination__nav">
-            <span><i class="ri-arrow-left-s-line"></i></span>
-            <span><i class="ri-arrow-right-s-line"></i></span>
-          </div> -->
-        </div>
-        <div class="destination__grid">
-          <div class="destination__card">
-            <img src="assets/destination-1.jpg" alt="destination" />
-            <div class="destination__details">
-              <p class="destination__title">Banff</p>
-              <p class="destination__subtitle">Canada</p>
-            </div>
-          </div>
-          <div class="destination__card">
-            <img src="assets/destination-2.jpg" alt="destination" />
-            <div class="destination__details">
-              <p class="destination__title">Machu Picchu</p>
-              <p class="destination__subtitle">Peru</p>
-            </div>
-          </div>
-          <div class="destination__card">
-            <img src="assets/destination-3.jpg" alt="destination" />
-            <div class="destination__details">
-              <p class="destination__title">Lauterbrunnen</p>
-              <p class="destination__subtitle">Switzerland</p>
-            </div>
-          </div>
-          <div class="destination__card">
-            <img src="assets/destination-4.jpg" alt="destination" />
-            <div class="destination__details">
-              <p class="destination__title">Zhangjiajie</p>
-              <p class="destination__subtitle">China</p>
-            </div>
-          </div>
-        </div>
-      </section>
 
       <section class="trip" id="articles">
         <div class="section__container trip__container">
@@ -105,63 +64,64 @@
           </p>
           <div class="trip__grid">
             <div class="trip__card">
-              <img src="assets/trip-1.jpg" alt="trip" />
+              <img loading="lazy" src="assets/kruger.jpg" alt="Kruger Image" />
               <div class="trip__details">
-                <p>Voyagez au kruger</p>
+                <p>Voyager au kruger</p>
                 <div class="booking__price">
-                  <button class="book__now">Voir l'article</button>
-                </div>
+                  <a href="kruger.html" >
+                    <button class="book__now">Voir l'article</button>
+                  </a>                </div>
               </div>
             </div>
 
             <div class="trip__card">
-              <img src="assets/trip-2.jpg" alt="trip" />
+              <img loading="lazy" src="assets/namibia.jpg" alt="Namibia Image" />
               <div class="trip__details">
                 <p>Voyagez en Namibie</p>
                 <div class="booking__price">
-                  <button class="book__now">Voir l'article</button>
+                  <button class="book__now">Bientôt disponible</button>
                 </div>
               </div>
             </div>
 
             <div class="trip__card">
-              <img src="assets/trip-3.jpg" alt="trip" />
+              <img loading="lazy" src="assets/danger.jpg" alt="Danger Image" />
               <div class="trip__details">
                 <p>La sécurité</p>
                 <div class="booking__price">
-                  <button class="book__now">Voir l'article</button>
+                  <button class="book__now">Bientôt disponible</button>
                 </div>
               </div>
             </div>
 
             <div class="trip__card">
-              <img src="assets/trip-3.jpg" alt="trip" />
+              <img loading="lazy" src="assets/camp.jpg" alt="Camping Image" />
               <div class="trip__details">
                 <p>San Park et la wildcard</p>
                 <div class="booking__price">
-                  <button class="book__now">Voir l'article</button>
+                  <button class="book__now">Bientôt disponible</button>
                 </div>
               </div>
             </div>
 
 
             <div class="trip__card">
-              <img src="assets/trip-2.jpg" alt="trip" />
+              <img loading="lazy" src="assets/garden-route.jpg" alt="Garden Route Image" />
               <div class="trip__details">
                 <p>Garden Route</p>
                 <div class="booking__price">
-                  <button class="book__now">Voir l'article</button>
+                  <button class="book__now">Bientôt disponible</button>
                 </div>
               </div>
             </div>
 
 
             <div class="trip__card">
-              <img src="assets/trip-1.jpg" alt="trip" />
+              <img loading="lazy" src="assets/car.jpg" alt="Car Image" />
               <div class="trip__details">
                 <p>Acheter une voiture</p>
                 <div class="booking__price">
-                  <button class="book__now">Voir l'article</button>
+                  <button class="book__now">Bientôt disponible</button>
                 </div>
               </div>
             </div>
@@ -169,9 +129,9 @@
 
           
           </div>
-          <!-- <div class="view__all">
+          <div class="view__all">
             <button class="btn">View All</button>
-          </div> -->
+          </div> 
         </div>
       </section>
 
@@ -179,11 +139,11 @@
         <div class="section__container gallary__container">
           <div class="image__gallary">
             <div class="gallary__col">
-              <img src="assets/gallery-1.jpg" alt="gallary" />
+              <img loading="lazy" src="assets/gallery-1.jpg" alt="Map Image" />
             </div>
             <div class="gallary__col">
-              <img src="assets/gallery-2.jpg" alt="gallary" />
-              <img src="assets/gallery-3.jpg" alt="gallary" />
+              <img loading="lazy" src="assets/gallery-2.jpg" alt="Map Image" />
+              <img loading="lazy" src="assets/gallery-3.jpg" alt="Map Image" />
             </div>
           </div>
           <div class="gallary__content">
@@ -220,6 +180,55 @@
           </div>
         </div>
       </section>
+
+
+      <section class="section__container destination__container" id="photos">
+        <div class="section__header">
+          <div>
+            <h2 class="section__title">Nos photos</h2>
+            <p class="section__subtitle">
+              Quand on a préparé notre voyage, on s’est rendu compte que les guides étaient utiles mais souvent impersonnels. Les blogs étaient inspirants, mais parfois trop vagues. Alors, après des mois sur la route, on a eu envie de créer un espace où on partage vraiment ce qui nous a aidés, ce qu’on aurait aimé savoir avant de partir, et surtout, ce qui rend ce pays si spécial. Pas de recommandations sponsorisées, pas de discours formaté, juste du vécu.
+            </p>
+          </div>
+          <!-- <div class="destination__nav">
+            <span><i class="ri-arrow-left-s-line"></i></span>
+            <span><i class="ri-arrow-right-s-line"></i></span>
+          </div> -->
+        </div>
+        <div class="destination__grid">
+          <div class="destination__card">
+            <img loading="lazy" src="assets/destination-1.jpg" alt="destination" />
+            <div class="destination__details">
+              <p class="destination__title">Banff</p>
+              <p class="destination__subtitle">Canada</p>
+            </div>
+          </div>
+          <div class="destination__card">
+            <img loading="lazy" src="assets/destination-2.jpg" alt="destination" />
+            <div class="destination__details">
+              <p class="destination__title">Machu Picchu</p>
+              <p class="destination__subtitle">Peru</p>
+            </div>
+          </div>
+          <div class="destination__card">
+            <img loading="lazy" src="assets/destination-3.jpg" alt="destination" />
+            <div class="destination__details">
+              <p class="destination__title">Lauterbrunnen</p>
+              <p class="destination__subtitle">Switzerland</p>
+            </div>
+          </div>
+          <div class="destination__card">
+            <img loading="lazy" src="assets/destination-4.jpg" alt="destination" />
+            <div class="destination__details">
+              <p class="destination__title">Zhangjiajie</p>
+              <p class="destination__subtitle">China</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    
+  
 
       <!-- <section class="subscribe">
         <div class="section__container subscribe__container">
@@ -271,4 +280,16 @@
         </div>
       </footer>
     </body>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function() {
+          var userLang = navigator.language || navigator.userLanguage;
+          console.log(userLang);
+          if (userLang.startsWith("fr")) {
+              // window.location.href = "index-fr.html";
+          }
+      });
+  </script>
+
+
   </html>
