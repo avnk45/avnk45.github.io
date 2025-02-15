@@ -27,6 +27,12 @@ ul {
 }
 
 
+.desc {
+  font-weight: 300;
+  font-size: small;
+}
+
+
 table {
   border-collapse: collapse;
   width: 100%;
