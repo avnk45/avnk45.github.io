@@ -1,27 +1,25 @@
-  <!DOCTYPE html>
-  <html lang="en">
+    <!DOCTYPE html>
+    <html lang="en">
     <head>
       <meta charset="UTF-8" />
       <meta http-equiv="X-UA-Compatible" content="IE=edge" />
       <link rel="icon" href="/assets/favicon.ico" type="image/x-icon" />
-
+      
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <link
-        href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css"
-        rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css"
+      rel="stylesheet"
       />
       <link rel="stylesheet" href="styles.css" />
       <title>Travel South Africa</title>
     </head>
     <body>
-
-      <!-- <nav class="nav">
+      
+      
+      <nav class="nav">
         <input type="checkbox" id="nav-check">
-        <div class="nav-header">
-          <div class="nav-title">
-            Logo
-          </div>
-        </div>
+        <div class="nav__logo">Travel South Africa<span>.</span></div>
+        
         <div class="nav-btn">
           <label for="nav-check">
             <span></span>
@@ -30,35 +28,15 @@
           </label>
         </div>
         
-        <ul class="nav-list">
-          <li><a href="#">Home</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Contact</a></li>
-        </ul>
-      </nav> -->
-
-
-       <nav class="nav">
-        <input type="checkbox" id="nav-check">
-        <div class="nav__logo">Travel South Africa<span>.</span></div>
-        
-          <div class="nav-btn">
-          <label for="nav-check">
-            <span></span>
-            <span></span>
-            <span></span>
-          </label>
-        </div>
-
         <ul class="nav__links">
           <li class="link"><a href="#articles">Nos articles</a></li>
           <li class="link"><a href="#map">Notre carte</a></li>
           <li class="link"><a href="#photos">Nos photos</a></li>
           <li class="link"><a href="index_fr.html">FR 🇫🇷</a></li>
-
+          
         </ul>
         <button class="btn contact-btn" onclick="location.href='mailto:alex.vniekerk@gmail.com';">Contactez nous</button>
-
+        
       </nav>  
       <header id="header-1">
         <div class="section__container header__container">
@@ -69,9 +47,14 @@
           <div class="header__content">
             <div>
               
-              <h1>One year in South Africa</h1>
+              <h1>Un an en Afrique du Sud
+              </h1>
               <p class="section__subtitle">
-                <b>Nos découvertes et nos conseils pour un voyage exceptionnel.</b> Nous sommes partis pour un an à la découverte de l’Afrique du Sud, sans itinéraire figé, juste avec l’envie de nous laisser surprendre. De la savane aux montagnes, des villages isolés aux grandes villes vibrantes, nous avons appris à voyager autrement. Ce site, c’est notre carnet de route, nos coups de cœur et nos astuces, partagés avec vous pour vous aider à vivre votre propre aventure, à votre rythme.
+                <b>Notre expérience et nos conseils pour vous aider
+
+                </b> On est partis un an sur les routes d'Afrique du Sud, sans itinéraire précis, juste avec l’envie de découvrir le pays autrement. Ce site, c’est un peu notre carnet de bord : nos découvertes, nos galères, nos bonnes surprises. On partage tout ça ici, en espérant que ça puisse vous être utile.
+
+
               </p>
               <div class="action__btns">
                 <button class="btn">Découvrez notre carte</button>
@@ -87,243 +70,268 @@
           </div>
         </div>
       </header>
-
+      
       <section class="trip" id="articles">
         <div class="section__container trip__container">
           <h2 class="section__title">Nos articles</h2>
           <p class="section__subtitle">
-            Find the perfect getaway with our carefully curated trip 
-            packages. Enjoy unforgettable experiences, exceptional 
-            value, and seamless travel planning.
+            <b>Des infos concrètes, basées sur notre expérience
+
+            </b>
+            On aurait aimé trouver ce genre d’infos avant de partir, alors on les met ici :
+
+
           </p>
           <div class="trip__grid">
             <div class="trip__card">
               <img loading="lazy" src="assets/kruger.jpg" alt="Kruger Image" />
               <div class="trip__details">
-                <p>Voyager au kruger</p>
+                <p>Voyager au Kruger
+                </p>
+                <p class="desc" >
+                  Nos conseils pour profiter du parc
+      
+                </p>
                 <div class="booking__price">
+                    
                   <a href="kruger.html" >
                     <button class="book__now">Voir l'article</button>
                   </a>                </div>
-              </div>
-            </div>
-
-            <div class="trip__card">
-              <img loading="lazy" src="assets/namibia.jpg" alt="Namibia Image" />
-              <div class="trip__details">
-                <p>Voyagez en Namibie</p>
-                <div class="booking__price">
-                  <button class="book__now">Bientôt disponible</button>
                 </div>
               </div>
-            </div>
-
-            <div class="trip__card">
-              <img loading="lazy" src="assets/danger.jpg" alt="Danger Image" />
-              <div class="trip__details">
-                <p>La sécurité</p>
-                <div class="booking__price">
-                  <button class="book__now">Bientôt disponible</button>
+              
+              <div class="trip__card">
+                <img loading="lazy" src="assets/namibia.jpg" alt="Namibia Image" />
+                <div class="trip__details">
+                  <p>Voyager en Namibie</p>
+                  <p class="desc" >
+                    Un voyage exceptionnel
+        
+                  </p>
+                  <div class="booking__price">
+                    <button class="book__now">Bientôt disponible</button>
+                  </div>
                 </div>
               </div>
-            </div>
-
-            <div class="trip__card">
-              <img loading="lazy" src="assets/camp.jpg" alt="Camping Image" />
-              <div class="trip__details">
-                <p>San Park et la wildcard</p>
-                <div class="booking__price">
-                  <button class="book__now">Bientôt disponible</button>
+              
+              <div class="trip__card">
+                <img loading="lazy" src="assets/danger.jpg" alt="Danger Image" />
+                <div class="trip__details">
+                  <p>La sécurité</p>
+                  <p class="desc" >
+                    Ce qu’on a réellement vécu        
+                  </p>
+                  <div class="booking__price">
+                    <button class="book__now">Bientôt disponible</button>
+                  </div>
                 </div>
               </div>
-            </div>
-
-
-            <div class="trip__card">
-              <img loading="lazy" src="assets/garden-route.jpg" alt="Garden Route Image" />
-              <div class="trip__details">
-                <p>Garden Route</p>
-                <div class="booking__price">
-                  <button class="book__now">Bientôt disponible</button>
+              
+              <div class="trip__card">
+                <img loading="lazy" src="assets/camp.jpg" alt="Camping Image" />
+                <div class="trip__details">
+                  <p>San Parks & la Wildcard</p>
+                  <p class="desc" >
+                    Les bons plans pour les parcs         
+                  </p>
+                  <div class="booking__price">
+                    <button class="book__now">Bientôt disponible</button>
+                  </div>
                 </div>
               </div>
-            </div>
-
-
-            <div class="trip__card">
-              <img loading="lazy" src="assets/car.jpg" alt="Car Image" />
-              <div class="trip__details">
-                <p>Acheter une voiture</p>
-                <div class="booking__price">
-                  <button class="book__now">Bientôt disponible</button>
+              
+              
+              <div class="trip__card">
+                <img loading="lazy" src="assets/garden-route.jpg" alt="Garden Route Image" />
+                <div class="trip__details">
+                  <p>Garden Route</p>
+                  <p class="desc" >
+                    Nos étapes préférées        
+                  </p>
+                  <div class="booking__price">
+                    <button class="book__now">Bientôt disponible</button>
+                  </div>
                 </div>
               </div>
+              
+              
+              <div class="trip__card">
+                <img loading="lazy" src="assets/car.jpg" alt="Car Image" />
+                <div class="trip__details">
+                  <p>Acheter une voiture</p>
+                  <p class="desc" >
+                    Ce qu’on a appris en cherchant la nôtre        
+                  </p>
+                  <div class="booking__price">
+                    <button class="book__now">Bientôt disponible</button>
+                  </div>
+                </div>
+              </div>
+              
+              
+              
             </div>
-
-
-          
+            <!-- <div class="view__all">
+              <button class="btn">View All</button>
+            </div>  -->
           </div>
-          <div class="view__all">
-            <button class="btn">View All</button>
-          </div> 
-        </div>
-      </section>
-
-      <section class="gallary" id="map">
-        <div class="section__container gallary__container">
-          <div class="image__gallary">
-            <div class="gallary__col">
-              <img loading="lazy" src="assets/gallery-1.jpg" alt="Map Image" />
+        </section>
+        
+        <section class="gallary" id="map">
+          <div class="section__container gallary__container">
+            <div class="image__gallary">
+              <div class="gallary__col">
+                <img loading="lazy" src="assets/gallery-1.jpg" alt="Map Image" />
+              </div>
+              <div class="gallary__col">
+                <img loading="lazy" src="assets/gallery-2.jpg" alt="Map Image" />
+                <img loading="lazy" src="assets/gallery-3.jpg" alt="Map Image" />
+              </div>
             </div>
-            <div class="gallary__col">
-              <img loading="lazy" src="assets/gallery-2.jpg" alt="Map Image" />
-              <img loading="lazy" src="assets/gallery-3.jpg" alt="Map Image" />
-            </div>
-          </div>
-          <div class="gallary__content">
-            <div>
+            <div class="gallary__content">
+              <div>
                 <h2 class="section__title">
-                La carte qui nous aurait tant aidés
-                          </h2>
+                  La carte qui nous aurait tant aidés
+                </h2>
+                <p class="section__subtitle">
+                  Nos meilleures adresses, testées et approuvées
+                </p>
+                <p class="section__subtitle">
+                  Après des milliers de kilomètres, on a rassemblé une carte interactive avec tous les endroits qui nous ont marqués :
+                  
+                </p>
+                <ul>
+                  <li>              ✅ Nos restaurants coup de cœur (et ceux à éviter)
+                  </li>
+                  <li>✅ Des logements adaptés à tous les budgets
+                  </li>
+                  <li>✅ Les plus belles randonnées
+                  </li>
+                  
+                  <li>✅ Des astuces pratiques pour un road trip sans stress
+                  </li>
+                  
+                </ul>
+                <br>
+                <p class="section__subtitle">
+                  
+                  Cette carte, on l’a faite pour nous, au départ. Et on s’est dit que si elle nous avait été utile, elle pourrait aussi vous aider à organiser votre voyage, sans passer des heures à chercher des infos éparpillées.
+                </p>    
+                <button class="btn">Découvrez notre carte</button>
+              </div>
+            </div>
+          </div>
+        </section>
+        
+        
+        <section class="section__container destination__container" id="photos">
+          <div class="section__header">
+            <div>
+              <h2 class="section__title">Nos photos</h2>
               <p class="section__subtitle">
-                Nos meilleures adresses, testées et approuvées
+                Quand on a préparé notre voyage, on s’est rendu compte que les guides étaient utiles mais souvent impersonnels. Les blogs étaient inspirants, mais parfois trop vagues. Alors, après des mois sur la route, on a eu envie de créer un espace où on partage vraiment ce qui nous a aidés, ce qu’on aurait aimé savoir avant de partir, et surtout, ce qui rend ce pays si spécial. Pas de recommandations sponsorisées, pas de discours formaté, juste du vécu.
               </p>
+            </div>
+            <!-- <div class="destination__nav">
+              <span><i class="ri-arrow-left-s-line"></i></span>
+              <span><i class="ri-arrow-right-s-line"></i></span>
+            </div> -->
+          </div>
+          <div class="destination__grid">
+            <div class="destination__card">
+              <img loading="lazy" src="assets/destination-1.jpg" alt="destination" />
+              <div class="destination__details">
+                <p class="destination__title">Banff</p>
+                <p class="destination__subtitle">Canada</p>
+              </div>
+            </div>
+            <div class="destination__card">
+              <img loading="lazy" src="assets/destination-2.jpg" alt="destination" />
+              <div class="destination__details">
+                <p class="destination__title">Machu Picchu</p>
+                <p class="destination__subtitle">Peru</p>
+              </div>
+            </div>
+            <div class="destination__card">
+              <img loading="lazy" src="assets/destination-3.jpg" alt="destination" />
+              <div class="destination__details">
+                <p class="destination__title">Lauterbrunnen</p>
+                <p class="destination__subtitle">Switzerland</p>
+              </div>
+            </div>
+            <div class="destination__card">
+              <img loading="lazy" src="assets/destination-4.jpg" alt="destination" />
+              <div class="destination__details">
+                <p class="destination__title">Zhangjiajie</p>
+                <p class="destination__subtitle">China</p>
+              </div>
+            </div>
+          </div>
+        </section>
+        
+        
+        
+        
+        <!-- <section class="subscribe">
+          <div class="section__container subscribe__container">
+            <div class="subscribe__content">
+              <h2 class="section__title">Subscribe to get special prize</h2>
               <p class="section__subtitle">
-                Après des milliers de kilomètres, on a rassemblé une carte interactive avec tous les endroits qui nous ont marqués :
-
+                Subscribe now to unlock exclusive offers and special prizes. 
+                Don't miss out on our best deals and travel tips!
               </p>
-                            <ul>
-    <li>              ✅ Nos restaurants coup de cœur (et ceux à éviter)
-    </li>
-    <li>✅ Des logements adaptés à tous les budgets
-    </li>
-    <li>✅ Les plus belles randonnées
-    </li>
-
-    <li>✅ Des astuces pratiques pour un road trip sans stress
-    </li>
-
-  </ul>
-  <br>
-  <p class="section__subtitle">
-
-  Cette carte, on l’a faite pour nous, au départ. Et on s’est dit que si elle nous avait été utile, elle pourrait aussi vous aider à organiser votre voyage, sans passer des heures à chercher des infos éparpillées.
-  </p>    
-              <button class="btn">Découvrez notre carte</button>
+            </div>
+            <div class="subscribe__form">
+              <form>
+                <input type="email" placeholder="Your email here" />
+                <button class="btn" type="submit">Send</button>
+              </form>
             </div>
           </div>
-        </div>
-      </section>
-
-
-      <section class="section__container destination__container" id="photos">
-        <div class="section__header">
-          <div>
-            <h2 class="section__title">Nos photos</h2>
-            <p class="section__subtitle">
-              Quand on a préparé notre voyage, on s’est rendu compte que les guides étaient utiles mais souvent impersonnels. Les blogs étaient inspirants, mais parfois trop vagues. Alors, après des mois sur la route, on a eu envie de créer un espace où on partage vraiment ce qui nous a aidés, ce qu’on aurait aimé savoir avant de partir, et surtout, ce qui rend ce pays si spécial. Pas de recommandations sponsorisées, pas de discours formaté, juste du vécu.
-            </p>
-          </div>
-          <!-- <div class="destination__nav">
-            <span><i class="ri-arrow-left-s-line"></i></span>
-            <span><i class="ri-arrow-right-s-line"></i></span>
-          </div> -->
-        </div>
-        <div class="destination__grid">
-          <div class="destination__card">
-            <img loading="lazy" src="assets/destination-1.jpg" alt="destination" />
-            <div class="destination__details">
-              <p class="destination__title">Banff</p>
-              <p class="destination__subtitle">Canada</p>
+        </section> -->
+        
+        <footer class="footer">
+          <div class="section__container footer__container">
+            <div class="footer__col">
+              <h3>Travel South Africa<span>.</span></h3>
+              <p>
+                Aujourd’hui, on partage ce qu’on a vécu pour aider d’autres voyageurs à se lancer, avec moins d’incertitudes et plus de confiance.
+                
+              </p>
             </div>
-          </div>
-          <div class="destination__card">
-            <img loading="lazy" src="assets/destination-2.jpg" alt="destination" />
-            <div class="destination__details">
-              <p class="destination__title">Machu Picchu</p>
-              <p class="destination__subtitle">Peru</p>
+            <div class="footer__col">
+              <h4>Aide</h4>
+              <!-- <p>FAQs</p> -->
+              <p>Terms & Conditions</p>
+              <!-- <p>Privacy Policy</p> -->
+              <p> <a href= "mailto:alex.vniekerk@gmail.com">Contact Us</a></p>
+              
             </div>
+            <!-- <div class="footer__col">
+              <h4>Address</h4>
+              <p>
+                <span>Address:</span> 280 Koregaon Park, Pune, Maharashtra,
+                India
+              </p>
+              <p><span>Email:</span> info@pathway.com</p>
+              <p><span>Phone:</span> +91 9322823758</p>
+            </div> -->
           </div>
-          <div class="destination__card">
-            <img loading="lazy" src="assets/destination-3.jpg" alt="destination" />
-            <div class="destination__details">
-              <p class="destination__title">Lauterbrunnen</p>
-              <p class="destination__subtitle">Switzerland</p>
-            </div>
+          <div class="footer__bar">
+            Copyright © 2025
           </div>
-          <div class="destination__card">
-            <img loading="lazy" src="assets/destination-4.jpg" alt="destination" />
-            <div class="destination__details">
-              <p class="destination__title">Zhangjiajie</p>
-              <p class="destination__subtitle">China</p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-    
-  
-
-      <!-- <section class="subscribe">
-        <div class="section__container subscribe__container">
-          <div class="subscribe__content">
-            <h2 class="section__title">Subscribe to get special prize</h2>
-            <p class="section__subtitle">
-              Subscribe now to unlock exclusive offers and special prizes. 
-              Don't miss out on our best deals and travel tips!
-            </p>
-          </div>
-          <div class="subscribe__form">
-            <form>
-              <input type="email" placeholder="Your email here" />
-              <button class="btn" type="submit">Send</button>
-            </form>
-          </div>
-        </div>
-      </section> -->
-
-      <footer class="footer">
-        <div class="section__container footer__container">
-          <div class="footer__col">
-            <h3>Travel South Africa<span>.</span></h3>
-            <p>
-              Aujourd’hui, on partage ce qu’on a vécu pour aider d’autres voyageurs à se lancer, avec moins d’incertitudes et plus de confiance.
-
-            </p>
-          </div>
-          <div class="footer__col">
-            <h4>Aide</h4>
-            <!-- <p>FAQs</p> -->
-            <p>Terms & Conditions</p>
-            <!-- <p>Privacy Policy</p> -->
-            <p> <a href= "mailto:alex.vniekerk@gmail.com">Contact Us</a></p>
-
-          </div>
-          <!-- <div class="footer__col">
-            <h4>Address</h4>
-            <p>
-              <span>Address:</span> 280 Koregaon Park, Pune, Maharashtra,
-              India
-            </p>
-            <p><span>Email:</span> info@pathway.com</p>
-            <p><span>Phone:</span> +91 9322823758</p>
-          </div> -->
-        </div>
-        <div class="footer__bar">
-          Copyright © 2025
-        </div>
-      </footer>
-    </body>
-
-    <script>
-      document.addEventListener("DOMContentLoaded", function() {
+        </footer>
+      </body>
+      
+      <script>
+        document.addEventListener("DOMContentLoaded", function() {
           var userLang = navigator.language || navigator.userLanguage;
           console.log(userLang);
           if (userLang.startsWith("fr")) {
-              // window.location.href = "index-fr.html";
+            // window.location.href = "index-fr.html";
           }
-      });
-  </script>
-
-
-  </html>
+        });
+      </script>
+      
+      
+      </html>
