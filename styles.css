@@ -85,7 +85,7 @@ tr:nth-child(even) {
     height: 0;
     transition: all 0.2s ease-in;
     text-align: center;
-    justify-content: center;
+    justify-content: start;
     align-items: center;
     border-radius: 50px;
     top: 55px;
