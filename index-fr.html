@@ -1,18 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+  <!-- Encodage et compatibilité -->
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <link rel="icon" href="/assets/favicon.ico" type="image/x-icon" />
-  
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link
-  href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css"
-  rel="stylesheet"
-  />
+
+  <!-- SEO: Meta description et mots-clés -->
+  <title>Travel South Africa - Your Ultimate Guide</title>
+  <meta name="description" content="Discover South Africa with expert tips, must-visit places, and practical guides for an unforgettable journey." />
+  <meta name="keywords" content="South Africa travel, South Adrica map, best places, road trip, safari, Kruger Park, Cape Town" />
+  <meta name="author" content="Travel South Africa" />
+  
+  <!-- SEO: Version en français -->
+  <link rel="alternate" hreflang="en" href="https://southafricatips.com/index.html" />
+  <link rel="alternate" hreflang="fr" href="https://southafricatips.com/index-fr.html" />
+  <link rel="alternate" hreflang="x-default" href="https://southafricatips.com/index.html" />
+
+  <!-- SEO: Canonical URL (évite le contenu dupliqué) -->
+  <link rel="canonical" href="https://southafricatips.com/index.html" />
+
+  <!-- Open Graph (Facebook, LinkedIn) -->
+  <meta property="og:title" content="Travel South Africa - Your Ultimate Guide" />
+  <meta property="og:description" content="Discover South Africa with expert tips, must-visit places, and practical guides for an unforgettable journey." />
+  <meta property="og:image" content="https://southafricatips.com/assets/bg.jpg" />
+  <meta property="og:url" content="https://southafricatips.com/index.html" />
+  <meta property="og:type" content="website" />
+  
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Travel South Africa - Your Ultimate Guide" />
+  <meta name="twitter:description" content="Discover South Africa with expert tips and must-visit places." />
+  <meta name="twitter:image" content="https://southafricatips.com/assets/bg.jpg" />
+
+  <meta content="yes" name="mobile-web-app-capable">
+  <meta content="yes" name="apple-mobile-web-app-capable">
+
+  <!-- Favicon -->
+  <link rel="icon" href="/assets/favicon.ico" type="image/x-icon" />
+
+  <!-- CSS et icônes -->
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
-  <title>Travel South Africa</title>
+
 </head>
+
+
 <body>
   
   
@@ -32,7 +66,7 @@
       <li class="link"><a href="#articles">Nos articles</a></li>
       <li class="link"><a href="#map">Notre carte</a></li>
       <li class="link"><a href="#photos">Nos photos</a></li>
-      <li class="link"><a href="index_fr.html">FR 🇫🇷</a></li>
+      <li class="link"><a href="index-fr.html" class="lang-switch" >EN </a></li>
       
     </ul>
     <button class="btn contact-btn" onclick="location.href='mailto:alex.vniekerk@gmail.com';">Contactez nous</button>
@@ -323,15 +357,51 @@
     </footer>
   </body>
   
-  <script>
-    document.addEventListener("DOMContentLoaded", function() {
-      var userLang = navigator.language || navigator.userLanguage;
-      console.log(userLang);
-      if (userLang.startsWith("fr")) {
-        // window.location.href = "index-fr.html";
-      }
+
+
+
+<script>
+(function () {
+    const userLang = navigator.language || navigator.userLanguage; // Détecte la langue du navigateur
+    const storedLang = localStorage.getItem("preferredLang"); // Langue enregistrée
+    const currentUrl = window.location.href;
+    const isFrenchPage = currentUrl.includes("index-fr.html"); // Vérifie si on est en français
+    const baseUrl = currentUrl.replace("index-fr.html", "index.html").replace("index.html", "");
+
+    function redirectToLanguage(lang) {
+        if (lang === "fr" && !isFrenchPage) {
+            window.location.href = baseUrl + "index-fr.html";
+        } else if (lang === "en" && isFrenchPage) {
+            window.location.href = baseUrl + "index.html";
+        }
+    }
+
+    // Si l'utilisateur a déjà sélectionné une langue, on la garde
+    if (storedLang) {
+        redirectToLanguage(storedLang);
+    } 
+    // Sinon, on redirige selon la langue du navigateur si aucune langue n'a été choisie
+    else if (!isFrenchPage && userLang.startsWith("fr")) {
+        redirectToLanguage("fr");
+    }
+
+    // Gestion du changement de langue via le menu
+    document.addEventListener("DOMContentLoaded", function () {
+        const langSwitchLink = document.querySelector(".lang-switch");
+        if (langSwitchLink) {
+            langSwitchLink.addEventListener("click", function (e) {
+                e.preventDefault(); // Empêche le rechargement immédiat
+                const newLang = isFrenchPage ? "en" : "fr"; // Inverse la langue actuelle
+                localStorage.setItem("preferredLang", newLang);
+                redirectToLanguage(newLang);
+            });
+        }
     });
-  </script>
+})();
+</script>
+
+
+
   
   
   </html>
